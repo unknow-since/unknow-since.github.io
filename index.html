@@ -11,7 +11,21 @@ hello world!
         <br>Dessa ord är färgade: <h1 style="color:red">röd</h1> 
     <h1 style="color:blue">blå</h1> <h1 style="color:green">grön</h1>
 <br>Här är lite fakta om fotbollen. Fotbollen är <del>fyrkantig</del> rund. 
-</p>
+</p><script>
+    function light(sw) {
+      var pic;
+      if (sw == 0) {
+        pic = "pic_bulboff.gif"
+      } else {
+        pic = "pic_bulbon.gif"
+      }
+      document.getElementById('myImage').src = pic;
+    }
+    </script>
+    
+    <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+    <p><button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button></p>
     
 </body>
 </html>
