@@ -62,5 +62,27 @@ hello world!
               </div>
               
               <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>    </body>
-
+              <head>
+                <script>
+                function clickCounter() {
+                  if (typeof(Storage) !== "undefined") {
+                    if (localStorage.clickcount) {
+                      localStorage.clickcount = Number(localStorage.clickcount)+1;
+                    } else {
+                      localStorage.clickcount = 1;
+                    }
+                    document.getElementById("result").innerHTML = "du har tryckt på knappen " + localStorage.clickcount + " gånger";
+                  } else {
+                    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+                  }
+                }
+                </script>
+                </head>
+                <body>
+                
+                <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+                <div id="result"></div>
+                <p>tryck på knappen</p>
+                
+                </body>
               </html>
