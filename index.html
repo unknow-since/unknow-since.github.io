@@ -10,10 +10,13 @@ hello world!
     <p>det här är min första websida. Det här ordet är <mark>markerad.</mark> 
         <br>Dessa ord är färgade: <h1 style="color:red">röd</h1> 
     <h1 style="color:blue">blå</h1> <h1 style="color:green">grön</h1>
-<br>Här är lite fakta om fotbollen. Fotbollen är <del>fyrkantig</del> rund  
+<br>Här är lite fakta om fotbollen. Fotbollen är <del>fyrkantig</del> rund
       <span title="secret ">.</span>
 <br><br>Här nedan finns det en lampa som man kan tända och släcka
-<br>genom att trycka på "Light On" och "Light Off".</p><script>
+<br>genom att trycka på "Light On" och "Light Off".</p>
+
+<!--glödlampan-->
+<script>
     function light(sw) {
       var pic;
       if (sw == 0) {
@@ -31,7 +34,9 @@ hello world!
  <p>här finns det en fin bild på Björn Gustavson som man kan 
     <br>flytta från den vänstra rutan till den högra.
  </p>
-        <head>
+       
+ <!--flytta från ruta till ruta-->
+ <head>
             <style>
             #div1, #div2 {
               float: left;
@@ -61,8 +66,9 @@ hello world!
             <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <img src="björn2.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="180" height="85">
               </div>
-              
               <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>    </body>
+             
+              <!--tryck på knappen-->
               <head>
                 <script>
                 function clickCounter() {
