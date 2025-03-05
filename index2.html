@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<pre>
+<label for="namn">Vad heter du?</label>
+<input type="text">
+
+<label for="ålder">Hur gammal är du? Välj någon av rutorna nedan.</label>
+<input type="checkbox">1-8
+<input type="checkbox">9-15
+<input type="checkbox">15-17
+<input type="checkbox">18+
+
+<label for="stad">Var bor du?</label>
+<input type="text">
+
+<audio id="myAudio">
+    <source src="man-scream-121085.mp3" type="audio/ogg">
+</audio>
+<label for="information">Är du en rysk spion?</label>
+<input type="checkbox" onclick="playAudio()">ja
+<input type="checkbox">nej
+
+<script>
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+ x.play();   
+}
+
+</script>
+
+
+
+</pre>
+</body>
+</html>
