@@ -9,23 +9,23 @@
 
 <pre>
 <label for="namn">Vad heter du?</label>
-<input type="text">
+<input id="namn" type="text">
 
 <label for="ålder">Hur gammal är du? Välj någon av rutorna nedan.</label>
-<input type="checkbox">1-8
-<input type="checkbox">9-15
-<input type="checkbox">15-17
-<input type="checkbox">18+
+<input id="ålder1" type="checkbox">1-8
+<input id="ålder2" type="checkbox">9-15
+<input id="ålder3" type="checkbox">15-17
+<input id="ålder4" type="checkbox">18+
 
 <label for="stad">Var bor du?</label>
-<input type="text">
+<input id="stad" type="text">
 
 <audio id="myAudio">
     <source src="russian-federation-national-anthem.mp3" type="audio/ogg">
 </audio>
 <label for="information">Är du en rysk spion?</label>
-<input type="checkbox" onclick="playAudio()">ja
-<input type="checkbox">nej
+<input id="information1" type="checkbox" onclick="playAudio()">ja
+<input id="information2" type="checkbox">nej
 
 <script>
 var x = document.getElementById("myAudio");
@@ -36,11 +36,70 @@ function playAudio() {
 
 </script>
 
-<label for=""></label>
 
 
+<script>
+function data(namn, ålder, stad, information) {
+this.namn = namn;
+this.ålder = ålder;
+this.stad = stad;
+this.information = information;
+}
 
+function collectData() {
+
+var namn = document.getElementById("namn").value;
+var stad = document.getElementById("stad").value;
+
+var ålder = [];
+    if (document.getElementById("ålder1").checked) {
+        ålder.push("1-8");
+    }
+    if (document.getElementById("ålder2").checked) {
+        ålder.push("9-15");
+    }
+    if (document.getElementById("ålder3").checked) {
+        ålder.push("15-17");
+    }
+    if (document.getElementById("ålder4").checked) {
+        ålder.push("18+");
+    }
+
+    var information = document.getElementById("information1").checked ? "ja" : "nej";
+    var userData = new data(namn, ålder, stad, information);
+
+    console.log(userData);
+    
+    var ålderText = ålder.length > 1 ? "Dina åldersintervall är: " + ålder.join(", ") : "Du är " + ålder[0];
+
+var resultText = "Du heter " + namn + ".\n" + 
+                 "Du är " + ålderText + ".\n" + 
+                 "Du bor i " + stad + ".\n" + 
+                 "Är du en rysk spion? " + (information === "ja" ? "Ja" : "Nej");
+
+// Visa den sammanfattande texten på sidan
+document.getElementById("resultat").innerText = resultText;
+
+}
+
+
+</script>
+
+<button onclick="collectData()">Skicka</button>
+
+<p id="resultat"></p>
 
 </pre>
+
+
+<form action="https://webhook.site/6bb0a28e-657b-4de3-b868-791a9b90240b">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+
+
 </body>
 </html>
