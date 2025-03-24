@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        function checkInput() {
+            var input = document.getElementById("inputField").value;
+            var correctInput = "46 4 22 18 100 6 6 17 26 0 3 33 7 32 39 5 1 73 24 33 22 25 5 2 17 0 (0 14 7)";
+            
+            if (input === correctInput) {
+                // Skicka användaren till en annan sida om inmatningen stämmer
+                window.location.href = "csstest.html"; // Byt ut denna URL mot din önskade sida
+            } else {
+                alert("Fel inmatning, försök igen.");
+            }
+        }
+    </script>
+
 </head>
 <body>
 
@@ -100,6 +115,8 @@ document.getElementById("resultat").innerText = resultText;
     <input type="submit" value="Submit">
   </form> 
 
+  <input type="text" id="inputField" placeholder="...">
+  <button onclick="checkInput()">Skicka</button>
 
 </body>
 </html>
