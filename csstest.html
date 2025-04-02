@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,53 @@
             background-color: red;
         }
     
-    
+    .div {
+text-align: center; border: 10px solid gold;width: 250px; background-color: goldenrod;
+height: 75px; border-style: dotted; 
+
+
+    }
+
+
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .image {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            animation: moveOut 100s linear infinite;
+        }
+
+        @keyframes moveOut {
+            0% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            30% {
+                transform: translateX(100vw);
+                opacity: 1;
+            }
+            40% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0;
+            }
+            70% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+
     </style>
     <link rel="stylesheet" href="css/mystyle.css">
 
@@ -17,13 +63,17 @@
 </head>
 
 <body>
-    <h1 style="background-color:blue;">Stor rubrik</h1>
-    <h2>Mindre rubrik</h2>
-    <p>Lite text i en paragraf.</p>
+    <h1 style="background-color:blue;">Du har hittat den hemliga sidan</h1>
+    <h2>Grattulerar</h2>
+    <p>Du är nu en ägare till den gyllene biljetten</p>
 <img src="css/funny dexter.jpg" alt="cute picture of sexy man" 
 style="position: absolute; right: 1%; top: 1%;">
 
+<center><div class="div"><h1 style="color: yellow;">Golden ticket</h1></div></center>
 
+<div class="container">
+<img class="image" src="css/funny dexter.jpg" alt="lol">
+</div>
 
 </body>
 
