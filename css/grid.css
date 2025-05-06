@@ -22,38 +22,6 @@
 
 }
 
-.texttest {
-    font-size: xx-large;
-    
-}
-
-@media screen and (max-width: 806px) {
-    .texttest {
-      font-size: x-large;
-     
-    }
-  }
-
-  @media screen and (max-width: 608px) {
-    .texttest {
-      font-size: large;
-     
-    }
-  }
-
-  @media screen and (max-width: 460px) {
-    .texttest {
-      font-size: medium;
-     
-    }
-  }
-
-  @media screen and (max-width: 408px) {
-    .texttest {
-      font-size: 85%;
-     
-    }
-  }
 
 .bild1 {
     /* grid-column-start: 1;
