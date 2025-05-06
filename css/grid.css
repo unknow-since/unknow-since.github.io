@@ -31,7 +31,7 @@
     text-align: center;
     /* width: 638px;
     height: 300px; */
-    width: 35%;
+    width: 100%;
     height: auto;
 }
 
@@ -46,7 +46,7 @@
     text-align: center;
     /* width: 638px;
     height: 300px; */
-    width: 35%;
+    width: 100%;
     height: auto;
 
 }
@@ -58,4 +58,11 @@
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
+}
+
+.product-card {
+    text-align: center;
+    width: 35%;
+    height: auto;
+    
 }
