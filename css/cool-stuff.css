@@ -1,0 +1,12 @@
+.buy-button {
+    width: 45%;
+    height: 9%;
+    background-color: yellowgreen;
+    border: 2px solid blue;
+    border-radius: 15px;
+    
+}
+
+.buy-button:hover {
+    background-color: rgb(145, 193, 49);
+}
