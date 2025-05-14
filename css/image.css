@@ -1,0 +1,31 @@
+.kundvagn-bild {
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+    height: 46px;
+    width: auto;
+    position: relative;
+    top: 16px;
+    right: 2px;
+}
+
+@media screen and (max-width: 1300px) {
+    .kundvagn-bild {
+      height: 40px;
+      width: auto;
+      position: relative;
+      top: 12px;
+      right: 2px;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .kundvagn-bild {
+      height: 28px;
+      width: auto;
+      position: relative;
+      top: 9px;
+      right: 2px;
+    }
+  }
