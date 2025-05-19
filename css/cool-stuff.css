@@ -17,6 +17,7 @@
     font-size: 25px;
     border: 2px solid;
     border-radius: 10px;
+    background-color: yellowgreen;
 }
 
 @media screen and (max-width: 1300px) {
@@ -33,4 +34,9 @@
       height: 28px;
       font-size: 17px;
     }
+  }
+
+  .kundvagn:hover {
+    background-color: rgb(145, 193, 49);
+    box-shadow: black 2px 3px 5px;
   }
