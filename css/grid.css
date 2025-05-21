@@ -7,8 +7,18 @@
 
 .grid-container2 {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 30.33% 30.33% 30.33% 9%;
     grid-template-rows: auto 100px 100px 100px 100px;
+}
+
+.menu {
+    background-color: lightgrey;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    font-size: 170px;
+    text-align: center;
 }
 
 .headline {
