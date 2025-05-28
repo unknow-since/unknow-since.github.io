@@ -52,6 +52,48 @@
     }
   }
 
+  @media screen and (max-width: 740px) {
+    .menu {
+    font-size: 90px;
+     
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+    .menu {
+    font-size: 75px;
+     
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    .menu {
+    font-size: 43px;
+     
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    .menu {
+    font-size: 42px;
+     
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .menu {
+    font-size: 40px;
+     
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .menu {
+    font-size: 37px;
+     
+    }
+  }
+
 .headline {
     background-color: lightgrey;
     grid-column-start: 1;
