@@ -246,9 +246,16 @@
 
 .köp-knapp {
   background-color: forestgreen;
-  color: white;
+  color: gold;
   border: none;
-  padding: 5px 10px;
-  border-radius: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
 }
 
+.köp-inte {
+  background-color: forestgreen;
+  color: rgb(255, 89, 89);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
